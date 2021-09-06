@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    
+                  <!-- Adding below test cases for history and message entry -->
+      
+         <!-- Adding for honeywell online account sign in and selection for call and message -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Keypad.DrawerProfileOnlineSelect"/>
+      
+   	  <!-- For Message list entry -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageCompose"/>
+   	  
+   	  <!-- For History Entry -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallMessages"/>
+   	  
+   	  
+    
+            <!-- Verify if delete all contact that are saved with buddy number  -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteBuddy"/>
+      
+      <!-- Verify if delete all contact name that are saved name "Buddy" -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteBuddyName"/>
+    
+    <!-- TC#413	Create New Contact from Keypad -->
+     <class name="AutomationTest.GoDirectVoiceAndroid.contactkeypad.AddContactKeypad"/>
+     
+            <!-- TC#414	Create New Contact from Keypad and verify that contact is synced in contacts list
+TC#415	Create New Contact from Keypad and verify that contact is synced in history list
+TC#416	Create New Contact from Keypad and verify that contact is synced in history details
+TC#417	Create New Contact from Keypad and verify that contact is synced in Buddies list
+TC#418	Create New Contact from Keypad and verify that contact is synced in Buddies details
+TC#419	Create New Contact from Keypad module and verify that contact is synced in Message list
+TC#420	Create New Contact from Keypad module and verify that contact is synced in Message thread header
+Verify the saved contact name in call screen
+Verify contact button is inactive in Keypad -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactSavedCheck"/>
+      
+      
+                  <!-- Verify if delete all contact that are saved with buddy number  -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteBuddy2"/>
+      
+      
+      <!-- Delete the contact to add it as fresh for add to existing contact -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.contactkeypad.ContactDeleteBreg"/>
+        
+         <!-- Add the contact to add existing contact -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactBreg"/>
+      
+      <!-- TC#421	Add to Existing Contact from Keypad -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contactkeypad.AddExistingContKeypad"/>
+      
+     <!-- TC#422	Add to Existing Contact from Keypad and verify that contact is synced in contacts list
+TC#423	Add to Existing Contact from Keypad and verify that contact is synced in history list
+TC#424	Add to Existing Contact from Keypad and verify that contact is synced in history details
+TC#425	Add to Existing Contact from Keypad and verify that contact is synced in Buddies list
+TC#426	Add to Existing Contact from Keypad and verify that contact is synced in Buddies details
+TC#427	Add to Existing Contact from Keypad module and verify that contact is synced in Message list
+TC#428	Add to Existing Contact from Keypad module and verify that contact is synced in Message thread header 
+Verify the saved contact name in call screen
+Verify contact button is inactive in Keypad-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contactkeypad.ContactAddExistingCheck"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

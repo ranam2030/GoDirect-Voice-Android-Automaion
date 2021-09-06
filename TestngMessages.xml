@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    <!-- TC#251	Verify if new message page is showing when press on create new message button from message list
+    Verify if buddy can be searched from message auto suggestion list with Buddy Number 
+    TC#254	Verify if buddy can be added  from message auto suggestion list 
+    TC#256	Verify if secure message can be sent to that added buddy 
+    TC#260	Verify if secure message can be sent with auto provisioned account when secured option enabled on both end (Sender and receiver) 
+	TC#262	Verify if secure message lock icon is showing below the text message for sent secured message-->
+    
+	<class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageCompose"/>
+      
+      <!-- TC#252	Verify if buddy can be searched from message auto suggestion list with Buddy saved name
+      TC#254	Verify if buddy can be added  from message auto suggestion list 
+      TC#256	Verify if secure message can be sent to that added buddy -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageComposeSaved"/>
+      
+      <!-- TC#255	Verify if added buddy can be removed from message compose box -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgBuddyRemove"/>
+       
+       <!-- TC#257	Verify if message can be sent to a buddy from Buddies module 
+       TC#285	Verify after once send or received message then when going to send message again then it will load the already existing message thread -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgSentBuddy"/>
+       
+       <!-- TC#258	Verify if message can be sent on condition that is a buddy from Contacts details  
+       TC#285	Verify after once send or received message then when going to send message again then it will load the already existing message thread -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgSentContact"/>
+       
+       <!-- TC#259	Verify if message can be sent on condition that is a buddy from History details  
+       TC#285	Verify after once send or received message then when going to send message again then it will load the already existing message thread -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgSentHistory"/>
+        
+        <!-- TC#264	Verify if non secure message can be sent with auto provisioned account when secured option is disabled
+        TC#266	Verify if lock icon is removed on the end where secured option is disabled for non secured sent message  -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.SecureOnOff"/>
+        <class name="AutomationTest.GoDirectVoiceAndroid.Messages.NonSecuredMsg"/>
+        
+        <!-- TC#269	Verify if multiple buddy can be added from message auto suggestion list
+			TC#270	Verify if group message can be sent to multiple buddy  -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.Messages.GroupMessage"/>
+        
+        <!-- TC#277	Verify if message can be sent and received with different variable "Phone number"
+        TC#278	Verify if message can be sent and received with different variable "Email ID"
+        TC#279	Verify if message can be sent and received with different variable "Web address"
+        TC#280	Verify if message can be sent and received with different variable "Emoticons" -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.SecureOnOff"/>
+         <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgVariable"/>
+         
+         <!-- TC#281	Verify if message can be sent and received by attached "Photo/Picture" -->
+         <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgSentPic"/>
+          <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgTakePic"/>
+         
+         <!-- TC#282	Verify if message can be sent and received by attached "Document" -->
+         <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgSentFile"/>
+         
+             <!-- TC#283	Verify when tap on sent/received mail address link then it will appear mail page with that mail address -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgMailLink"/>
+         
+          <!-- TC#284	Verify when tap on sent/received web address link then it will navigate to default browser with web address location -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgWebLink"/>
+       
+       <!--  TC#285	Verify after once send or received message then when going to send message again then it will load the already existing message thread -->
+             
+        <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgBuddyAccess"/>
+       <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgSentThreadBuddy"/>
+       
+               
+        <!-- TC#299	Verify if Auto Provisioned account profile name is showing in message list when the buddy number is unsaved -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageSentUnsaved"/>
+       
+        <!-- TC#292	Verify if message search with Buddy Name then message search result is showing properly
+        TC#293	Verify if message search with Buddy Number then message search result is showing properly
+        TC#294	Verify if message search with Message sent and received text keyword then message search result is showing properly
+		TC#296	Access message thread from search list and verify whether it shows that searched list or not when navigate back -->
+         <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageSearch"/>
+         
+          <!-- TC#292	Verify if message search with Buddy Name then message search result is showing properly
+        TC#295	Verify if message search with no match keyword then "No Message Found" is showing 
+		TC#296	Access message thread from search list and verify whether it shows that searched list or not when navigate back -->
+         <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgSearchUnsavedNoMatch"/>
+       
+       <!-- TC#288	Verify if single text message can be deleted from message thread -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgDeleteText"/>
+       
+        <!-- TC#288	Verify if single text message can be deleted from message thread -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Messages.DeleteSentPic"/>
+      
+       <!-- TC#288	Verify if single text message can be deleted from message thread -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.Messages.DeleteSentFile"/>
+       
+       
+           
+       <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgSelectionRemove"/>
+      
+        <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageDelete"/>
+        
+         <!-- TC#290	Verify if message thread can be deleted from Message thread->Delete Message Thread -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgDeleteThread"/>
+        
+        <!-- TC#289	Verify if message thread can be deleted from Messages list -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgDeleteMultiple"/>
+        
+       
+       
+     <!-- TC#306	Send message when Auto Provisioned account is not signed in and verify application is showing alert message regarding message service --> 
+      <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MsgServiceCheck"/>
+
+
+
+    
+ 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

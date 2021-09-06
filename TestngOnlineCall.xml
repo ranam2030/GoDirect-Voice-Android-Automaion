@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name = "Resources.Listeners"/>
+<listener class-name = "Resources.ExtentReporterNG"/>
+
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+    
+       <!-- TC#141	Verify when make call then it should always make call through selected account in Keypad -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Keypad.DrawerProfileOnlineSelect"/>
+      
+      <!-- TC#134	Verify if user can make call from all module with and without prefix from Keypad -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallKeypad"/>
+   	  
+   	  <!-- TC#135	Verify if user can make call from all module with and without prefix from History list -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallHistory"/>
+   	  
+   	  <!-- TC#136	Verify if user can make call from all module with and without prefix from History details -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallHistoryDetails"/>
+   	  
+   	  <!-- Add contact  buudy for call from contact details -->
+   	  
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactBuddy"/>
+   	  
+   	  <!-- TC#137	Verify if user can make call from all module with and without prefix from Contacts details -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallContact"/>
+   	  
+   	  <!-- TC#138	Verify if user can make call from all module with and without prefix from Buddies details  -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallBuddy"/>
+   	  
+   	  <!-- TC#139	Verify if user can make call from all module with and without prefix from Message list -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageCompose"/>
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallMessages"/>
+   	  
+   	  <!-- TC#140	Verify if user can make call from all module with and without prefix from Message thread -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallMsgThread"/>
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallMsgThreadBuddy"/>
+   	  
+   	  <!-- TC#134	Verify if user can make call from all module with and without prefix from Keypad -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallKeypadPrefix"/>
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.RedialKeypad"/>   
+   	      
+   	   <!-- TC#142	Verify when make outbound call then outbound call screen is showing
+   	   TC#143	Verify if during ringing an outbound call, user can enable-disable speaker option -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.call.OutgoingCall"/>
+      
+      <!-- TC#165	Verify if DTMF Keypad is working properly for single established call. Typed number in number keypad should be appeared properly
+      TC#227	Verify if Call statistics page is showing properly when press on Call statistics network bar
+      TC#249	Verify if Call statistics page also can be shown from app navigation drawer during call
+	  TC#250	Verify if Call Statistics mail can be sent to Technical team or not from app navigation drawer during call-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.call.EstablishCall"/>
+      
+      <!--"Verify if Call statistics of call for following two components into two tabs is showing or not
+      TC#230	Verify if Call statistics is showing for Active call into "Active Call" trab when single call is connected or not 
+      TC#231	Verify connected call “extension number” is showing properly or not
+      TC#232	Verify if connected call domain is showing properly or not
+      TC#233	Verify security “Status: Secured” is showing for "End-to-End Secure Call"
+      TC#237	Verify the codec name is showing properly and match with actual call codec
+      TC#238	Verify “Received/Lost” data is showing properly or not
+      TC#239	Verify “Received/Discarded” data is showing properly or not
+      TC#240	Verify “Sent/Lost” data is showing properly or not
+      TC#241	Verify if “Latency” is showing properly
+      TC#244	Verify if Call Statistics confirmation message is showing or not when press "Send" button
+      TC#245	Verify Call Statistics mail page subject is matching with application name and version 
+	  TC#246	Verify Call Statistics mail page email address (support@stitelnetworks.com)
+	  TC#247	Verify Call Statistics mail page body info about the call is showing properly or not
+	  TC#248	Verify if Call Statistics mail can be sent to Technical team or not  -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.call.CallStatistics"/>
+    
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

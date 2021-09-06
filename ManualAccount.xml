@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell - CNX900 -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccCNX900"/>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell - CNX800 -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccCNX800"/>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell - CNX250 -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccCNX250"/>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell - CG710 (GoDirect) -->
+  	  <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccCG710GD"/>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell - CG710 (Legacy) -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccCG710L"/>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell - CCU-200-->
+  	  <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccCCU200"/>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell - CCU-100 -->
+ 	  <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccCCU100"/>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell -  Aspire-100 -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccAspire100"/>
+   <!-- TC#44 Press on "Add Account" button from App navigation drawer: Honeywell -  Aspire-100 -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccGDR"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

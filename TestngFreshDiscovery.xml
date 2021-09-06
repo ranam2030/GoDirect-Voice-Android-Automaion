@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name = "Resources.Listeners"/>
+<listener class-name = "Resources.ExtentReporterNG"/>
+
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <!-- TC#16	"Verify if all the router list is showing properly or not in app launching in following order"
+      TC#20	Verify if it takes to Keypad module when successful router discovery is done
+      TC#21	Verify if extension is taken automatically with successful router discovery or not
+      TC#24	Verify the successful Auto discovery Account is showing in KEYPAD module header
+      TC#25	Verify if successful Auto discovery Account is registered properly or not
+      TC#26	Verify the successful Auto discovery Account is showing in Auto Discovery Account list in Profiles page
+      TC#28	Verify if "Profile Name" of Auto Discovery Account is showing or not in Profiles Page
+      TC#29	Verify if "Status" of Auto Discovery Account is showing or not in Profiles Page
+      TC#30	Verify if "Extension"  of Auto Discovery Account is showing or not in Profiles Page
+      TC#31	Verify if  Protocol type (SIP/IAX) of Auto Discovery Account is showing or not in Profiles Page
+      TC#32	Verify if "Domain" of Auto Discovery Account is showing or not in Profiles Page
+      TC#36	Verify that Auto discovered account is inaccessible from profile list
+      TC#391	Verify in application navigation drawer if profile name is showing or not for selected Auto discovered account
+      TC#134	Verify if user can make call from all module with and without prefix from Keypad
+
+	  TC#135	Verify if user can make call from all module with and without prefix from History list
+
+	  TC#136	Verify if user can make call from all module with and without prefix from History details
+
+	  TC#137	Verify if user can make call from all module with and without prefix from Contacts details
+
+	 TC#138	Verify if user can make call from all module with and without prefix from Buddies details 
+	 TC#160	Verify if non secured call can be made with cabin router to cabin router account -->
+ 	   <class name="AutomationTest.GoDirectVoiceAndroid.common.AppStartDiscovery"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

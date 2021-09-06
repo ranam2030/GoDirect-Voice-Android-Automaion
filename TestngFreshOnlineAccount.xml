@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    <!-- Verify if application is installed properly
+    TC#4	Verify the contacts permission pop up after fresh install 
+    TC#6	Verify the phone permission pop up message after fresh install
+    TC#12	Press on "Agree and Continue" button and verify navigation to router discovery page-->
+   	   <class name="AutomationTest.GoDirectVoiceAndroid.common.ContactPermission"/>
+   	   
+   	   <!-- TC#5	Verify the audio permission pop up for microphone access after fresh install -->
+   	   <class name="AutomationTest.GoDirectVoiceAndroid.common.MicPermissionKeypad"/>
+   	   <class name="AutomationTest.GoDirectVoiceAndroid.common.MicPermissionContact"/>
+   	   
+   <!-- TC#7	Verify the storage permission pop up message after fresh install -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.common.StoragePermissionPic"/>
+       <class name="AutomationTest.GoDirectVoiceAndroid.common.StoragePermissionFile"/>
+    
+    
+         <!-- TC#121	Verify if Sign in successfully with Auto Provisioned account online account takes to KEYPAD module with Auto Provisioned Account name or not
+     TC#125		After sign in successfully verify the Email (Username) in application navigation drawer 
+     TC#122		Verify if Auto Provisioned Account account is registered properly after Sign In or not
+     TC#389	Verify in application navigation drawer if Auto Provisioned account name  is showing or not for selected Auto provisioned account
+     TC#390	Verify in application navigation drawer if extension with USA format is showing or not for selected Auto provisioned account
+     TC#392	Verify in application navigation drawer if extension is showing or not for selected Auto provisioned account
+     TC#397	Verify in keypad if profile name is showing or not for selected  Honeywell Online account 
+     TC#399	Verify if the extension number of selected account is showing properly into "Contacts->My Number" or not-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.AppStartOnline"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

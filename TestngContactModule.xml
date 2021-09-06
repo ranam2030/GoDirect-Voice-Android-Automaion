@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    
+       <!-- Add the contact to verify its contact details -->
+  	  <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactTwM"/>
+      
+      <!-- TC#404	Access any contacts details page and verify if it is showing properly with all info or not -->
+	  <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDetails"/>
+      
+       <!-- TC#404	Access any contacts details page and verify if email, postal and web address link is working or not -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDetailsLink"/>
+      
+               <!-- Adding below test cases for history and message entry -->
+      
+         <!-- Adding for honeywell online account sign in and selection for call and message -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Keypad.DrawerProfileOnlineSelect"/>
+      
+   	  <!-- For Message list entry -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageCompose"/>
+   	  
+   	  <!-- For History Entry -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallMessages"/>
+      
+        <!-- Verify if delete all contact that are saved with buddy number  -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteBuddy"/>
+      
+            <!-- Verify if delete all contact name that are saved name "Buddy" -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteBuddyName"/>
+      
+        <!-- TC#405	Create New Contact from Contacts module  -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactBuddy"/>
+      
+      
+      <!-- TC#406	Create New Contact from Contacts module and verify that contact is showing in contacts list
+TC#407	Create New Contact from Contacts module and verify that contact is synced in history list
+TC#408	Create New Contact from Contacts module and verify that contact is synced in history details
+TC#409	Create New Contact from Contacts module and verify that contact is synced in Buddies list
+TC#410	Create New Contact from Contacts module and verify that contact is synced in Buddies details
+TC#411	Create New Contact from Contacts module and verify that contact is synced in Message list
+TC#412	Create New Contact from Contacts module and verify that contact is synced in Message thread header
+Verify the saved contact name in call screen
+Verify contact button is inactive in Keypad -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactSavedCheck"/>
+      
+
+      <!-- TC#476	Update Contact info from Contacts module   -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.EditContact"/>
+      
+            <!-- TC#477	Update Contact info from Contacts module and verify that contact is updated in contacts list
+TC#478	Update Contact info from Contacts module and verify that contact is updated in contacts details
+TC#479	Update Contact info from Contacts module and verify that contact is updated in history list
+TC#480	Update Contact info from Contacts module and verify that contact is updated in history details
+TC#481	Update Contact info from Contacts module and verify that contact is synced in Buddies list
+TC#482	Update Contact info from Contacts module and verify that contact is synced in Buddies details
+TC#483	Update Contact info from Contacts module and verify that contact is synced in message list
+TC#484	Update Contact info from Contacts module  and verify that contact is synced in message thread 
+Verify the saved contact name in call screen
+Verify contact button is inactive in Keypad-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactUpdateCheck"/>
+      
+
+<!-- After update contact number verify if the number is unsaved from all module -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.contacts.EditContactNumber"/>
+ 
+             <!-- TC#477	Update Contact info from Contacts module and verify that contact is updated in contacts list
+TC#478	Update Contact info from Contacts module and verify that contact is updated in contacts details
+TC#479	Update Contact info from Contacts module and verify that contact is updated in history list
+TC#480	Update Contact info from Contacts module and verify that contact is updated in history details
+TC#481	Update Contact info from Contacts module and verify that contact is synced in Buddies list
+TC#482	Update Contact info from Contacts module and verify that contact is synced in Buddies details
+TC#483	Update Contact info from Contacts module and verify that contact is synced in message list
+TC#484	Update Contact info from Contacts module  and verify that contact is synced in message thread 
+Verify the unsaved number in call screen
+Verify contact button is active in Keypad-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContNumUpdateCheck"/>
+
+      
+      <!-- TC#528	Verify if contact search with first name then contacts search result is showing properly
+TC#529	Verify if contact search with last name then contacts search result is showing properly
+TC#530	Verify if contact search with full name then contacts search result is showing properly
+TC#531	Verify if contact search with number then contacts search result is showing properly
+TC#532	Verify if contact search with number with prefix + then contacts search result is showing properly
+TC#533	Verify if contact search with number that has more than one number then contacts search result is showing properly
+TC#534	Verify if contact search with email address then contacts search result is showing properly
+TC#535	Verify if contact search with space first name then contacts search result is showing properly
+TC#536	Verify if contact search with space last name then contacts search result is showing properly
+TC#537	Verify if contact search with space full name then contacts search result is showing properly
+TC#538	Verify if contact search with space number then contacts search result is showing properly
+TC#539	Verify if contact search with space number with prefix + then contacts search result is showing properly
+TC#540	Verify if contact search with space number that has more than one number then contacts search result is showing properly
+TC#541	Verify if contact search with space email address then contacts search result is showing properly
+TC#543	Access contacts detail page from search list and verify whether it shows that searched list or not when navigate back -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactSearch"/>
+      
+      <!-- TC#542	Verify if contact search with no match keyword then "No Contact Found" is showing  -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactSearchNotMatch"/>
+      
+      <!-- Update Number for delete contact -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.contacts.EditContactNumberPrev"/>
+       
+         <!--Verify the contact syncing after Update Number for delete contact -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactUpdateCheck2"/>
+       
+       
+        <!--TC#512	Delete any contact from contacts details  -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteBuddy2"/>
+      
+      
+      <!-- TC#513	Delete any contact from contacts details and verify the delete of that contact synced in contacts list
+TC#514	"Delete any contact from contacts details and verify the delete of that contact synced in buddies list
+TC#515	"Delete any contact from contacts details and verify the delete of that contact synced in buddies details
+TC#516	"Delete any contact from contacts details and verify the delete of that contact synced in history list
+TC#517	"Delete any contact from contacts details and verify the delete of that contact synced in history details
+TC#518	"Delete any contact from contacts details and verify the delete of that contact synced in message list
+TC#519	"Delete any contact from contacts details and verify the delete of that contact synced in message thread
+Verify the unsaved number in call screen
+Verify contact button is active in Keypad-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteCheck"/>
+      
+        <!-- Delete multiple contact with pop up validation -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDelete"/>
+ 
+      
+          <!-- Add contact to scrolling till last -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactNewe"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactKeep"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactTwM"/>
+ 
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactIAX"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactAutoDiscovered"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactZuz"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactNumber"/>
+     
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactBreg"/>
+
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactEyek"/>
+      
+        <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactGump"/>
+
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactSteve"/>
+
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactOwn"/>
+      
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactRon"/>
+    
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactLopas"/>
+   
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactFyt"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactJhon"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactUsa"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactHira"/>
+
+     <!-- TC#403	Verify if Contacts list is showing in alphabetic order  or not -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactScrolling"/>
+      
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

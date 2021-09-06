@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    
+               <!-- Adding below test cases for history and message entry -->
+      
+         <!-- Adding for honeywell online account sign in and selection for call and message -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Keypad.DrawerProfileOnlineSelect"/>
+      
+   	  <!-- For Message list entry -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.Messages.MessageCompose"/>
+   	  
+   	  <!-- For History Entry -->
+   	  <class name="AutomationTest.GoDirectVoiceAndroid.call.CallMessages"/>
+   	  
+    
+        <!-- Verify if delete all contact that are saved with buddy number  -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteBuddy"/>
+      
+            <!-- Verify if delete all contact name that are saved name "Buddy" -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactDeleteBuddyName"/>
+   	  
+      <!-- TC#429	Create New Contact from History Details -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contactHistory.AddContactHistory"/>
+      
+      
+                  <!-- TC#430	Create New Contact from History Details and verify that contact is synced in contacts list
+TC#431	Create New Contact from History Details and verify that contact is synced in history list
+TC#432	Create New Contact from History Details and verify that contact is synced in history details
+TC#433	Create New Contact from History Details and verify that contact is synced in Buddies list
+TC#434	Create New Contact from History Details and verify that contact is synced in Buddies details
+TC#435	Create New Contact from History Details and verify that contact is synced in Message list
+TC#436	Create New Contact from History Details and verify that contact is synced in Message thread header
+Verify the saved contact name in call screen
+Verify contact button is inactive in Keypad -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactSavedCheck"/>
+      
+      
+      <!-- TC#485	Update Contact info from History Details -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contactHistory.EditContactHistory"/>
+      
+          <!-- TC#477	TC#486	Update Contact info from History Details and verify that contact is updated in contacts list
+TC#487	Update Contact info from History Details and verify that contact is updated in contacts details
+TC#488	Update Contact info from History Details and verify that contact is updated in history list
+TC#489	Update Contact info from History Details and verify that contact is updated in history details
+TC#490	Update Contact info from History Details and verify that contact is synced in Buddies list
+TC#491	Update Contact info from History Details and verify that contact is synced in Buddies details
+TC#492	Update Contact info from History Details and verify that contact is synced in message list
+TC#493	Update Contact info from History Details  and verify that contact is synced in message thread
+Verify the saved contact name in call screen
+Verify contact button is inactive in Keypad-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContactUpdateCheck"/>
+      
+      
+      <!-- After update contact number verify if the number is unsaved from all module -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.contactHistory.EditContactNumberHistory"/>
+ 
+ 
+             <!-- TC#477	TC#477	TC#486	Update Contact info from History Details and verify that contact is updated in contacts list
+TC#487	Update Contact info from History Details and verify that contact is updated in contacts details
+TC#488	Update Contact info from History Details and verify that contact is updated in history list
+TC#489	Update Contact info from History Details and verify that contact is updated in history details
+TC#490	Update Contact info from History Details and verify that contact is synced in Buddies list
+TC#491	Update Contact info from History Details and verify that contact is synced in Buddies details
+TC#492	Update Contact info from History Details and verify that contact is synced in message list
+TC#493	Update Contact info from History Details  and verify that contact is synced in message thread
+Verify the saved contact name in call screen
+Verify contact button is inactive in Keypad -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.ContNumUpdateCheck"/>
+      
+      
+       <!-- Delete the contact to add it as fresh for add to existing contact -->
+        <class name="AutomationTest.GoDirectVoiceAndroid.contactkeypad.ContactDeleteBreg"/>
+        
+         <!-- Add the contact to add existing contact -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contacts.AddContactBreg"/>
+      
+      <!-- TC#437	Add to Existing Contact from History Details -->
+       <class name="AutomationTest.GoDirectVoiceAndroid.contactHistory.AddExistingContHistory"/>
+       
+       
+       <!-- TC#438	Add to Existing Contact from History Details and verify that contact is synced in contacts list
+TC#439	Add to Existing Contact from History Details and verify that contact is synced in history list
+TC#440	Add to Existing Contact from History Details and verify that contact is synced in history details
+TC#441	Add to Existing Contact from History Details and verify that contact is synced in Buddies list
+TC#442	Add to Existing Contact from History Details and verify that contact is synced in Buddies details
+TC#443	Add to Existing Contact from History Details and verify that contact is synced in Message list
+TC#444	Add to Existing Contact from History Details and verify that contact is synced in Message thread header 
+Verify the saved contact name in call screen
+Verify contact button is inactive in Keypad-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.contactkeypad.ContactAddExistingCheck"/>
+      
+      
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

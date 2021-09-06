@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name = "Resources.Listeners"/>
+<listener class-name = "Resources.ExtentReporterNG"/>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <!--To Add/Edit/Delete dialplan for Manual account adding test class for add manual account-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccCNX900"/>
+      
+      <!--TC#83 Verify if dialplan can be added-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Dialplan.DialPlanAdd"/>
+      
+      <!--TC#84 Verify if dialplan can be edited-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Dialplan.DialPlanEdit"/>
+      
+      <!--TC#85 Verify if dialplan can be deleted-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Dialplan.DialPlanDelete"/>
+      
+      
+      
+     <!--To Add/Edit/Delete dialplan for Custom account adding test class for add manual account-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.account.AddAccHonCustomSIP"/>
+      <!--TC#96 Verify if dialplan can be added-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Dialplan.DialPlanAdd"/>
+      
+      <!--TC#97 Verify if dialplan can be edited-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Dialplan.DialPlanEdit"/>
+      
+      <!--TC#98 Verify if dialplan can be deleted-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Dialplan.DialPlanDelete"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

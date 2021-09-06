@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+       <!-- TC#43	"Press on ""PROCEED"" button from Offline login page and verify if manufacturer selection page appears or not with following  manufacturers" 
+      TC#17	Verify if pressing on Skip button takes the app to sign in  page or not (when app is freshly installed or no account was previously configured)
+      TC#393	Verify in application navigation drawer if profile name is showing or not for selected Manual account
+TC#394	Verify in application navigation drawer if extension is showing or not for selected Manual account
+TC#396	Verify in keypad if profile name is showing or not for selected Manual account-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.account.AppStartOffline"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

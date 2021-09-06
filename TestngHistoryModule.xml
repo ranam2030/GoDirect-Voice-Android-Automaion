@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name = "Resources.Listeners"/>
+<listener class-name = "Resources.ExtentReporterNG"/>
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <!--Instruction: Keep 6 call entries; first 3 incoming/outgoing call entries and last 3 missed entries-->
+      
+      <!--Verify if history selection can be removed on press of cross button when long press on any history entry from All list-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.history.HistorySelectionRemove"/>
+    
+      <!--TC#383 Delete entry from "All" list -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.history.HistoryDelete"/>
+      
+       <!--Verify if multiple entries can be deleted from History "All" list-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.history.HistoryDeleteMultiple"/>
+    
+      <!--Verify when press on any missed call entry it shows the missed call details page-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.history.HistoryMissed"/>
+      
+      <!--Verify if history selection can be removed on press of cross button when long press on any history entry from missed list-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.history.HistoryMissedListSelectionRemove"/>
+       
+       
+      <!--TC#384 Delete entry from "Missed" list -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.history.HistoryDeletefromMissedList"/>
+    
+      <!--Verify if multiple entries can be deleted from History "Missed" list-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.history.HistoryDeleteMultiplefromMissedList"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

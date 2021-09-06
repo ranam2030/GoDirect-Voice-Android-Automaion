@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+	<!--TC#544	Press on Re-Sync Account Details button and verify Re-sync Successful pop up when account is Re-synced successfully -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.Resync"/>
+      
+      <!-- TC#550	Verify if outbound call can be made to Honeywell Account after Re-Sync done -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Keypad.KeypadProfile"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.call.CallKeypad"/>
+      
+      <!-- TC#553	Verify all the hints are showing or not
+      TC#560	Verify if New password and Confirm password matching is verified or not -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.ChangePasswordCondition"/>
+      
+      <!-- TC#552	verify if password change page shows on Change password button press or not 
+      TC#563	Verify if "Confirm" is active after all conditions are met or not 
+      TC#564	Verify if sign in with new password is working properly or not-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.ChangePassword"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.LogOut"/>
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.LoginAccChangePass"/>
+      
+      <!-- TC#568	Verify empty validation for forgot password?
+      TC#569	Verify invalid user validation for forgot password? -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.ForgotPassValidation"/>
+      
+      <!-- TC#567	Press on "Forgot Password?" hyperlink in sign in page and verify if request can be sent to corresponding email address or not
+       -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.ForgotPassword"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

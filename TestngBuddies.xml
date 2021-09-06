@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name = "Resources.Listeners"/>
+<listener class-name = "Resources.ExtentReporterNG"/>
+
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+    
+    <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.LogInCheck"/>
+    
+    <!-- TC#347	Verify if online buddy list is showing properly or not after sign in with Auto Provisioned account
+     TC#348	Verify if offline buddy list is showing properly or not after sign in with Auto Provisioned account
+     TC#350	Verify if saved contact name is showing in buddies list when the buddy number is saved into contacts 
+     TC#364	Access buddies detail page from search list and verify whether it shows that searched list or not when navigate back-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Buddies.BuddySearch"/>
+      
+      <!-- TC#362	Verify if buddies search with no match keyword then "No Buddies Online" is showing for Auto provisioned accounts 
+      TC#364	Access buddies detail page from search list and verify whether it shows that searched list or not when navigate back-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Buddies.BuddySearchUnsavedNotMatch"/>
+      
+      <!-- TC#349	Verify if Auto Provisioned account profile name is showing in buddies list when the buddy number is unsaved -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Buddies.BuddiesScrolling"/>
+      
+      <!-- TC#363	Verify if buddies search with no match keyword then "No Online Account" is showing for Auto discovered accounts 
+      TC#364	Access buddies detail page from search list and verify whether it shows that searched list or not when navigate back
+      TC#351	Verify if buddies online list is showing for Auto discovered account 
+	 TC#352	Verify if buddies offline list is showing for Auto discovered account-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.Buddies.AutoBuddySearch"/>
+      
+      <class name="AutomationTest.GoDirectVoiceAndroid.Buddies.AutoBuddiesScrolling"/>
+      
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

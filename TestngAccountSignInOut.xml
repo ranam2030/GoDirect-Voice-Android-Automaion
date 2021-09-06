@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    <!-- TC#118	Verify the Empty field validation (Username and Password) when sign in with Auto Provisioned Account
+    TC#119	Verify the authentication (Username and Password) when sign in with Auto Provisioned Account -->
+     <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.LoginValidation"/>
+     
+     <!-- TC#121	Verify if Sign in successfully with Auto Provisioned account online account takes to KEYPAD module with Auto Provisioned Account name or not
+      TC#123	After sign in successfully verify the Auto Provisioned Account info is showing or not in profiles list page
+      TC#124	After sign in successfully verify the right "Domain" is showing in profiles list-->
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.LoginAcc"/>
+      
+      
+        <!-- TC#128	Press Sign Out from Auto Provisioned account and verify if "Sign Out" option replaces by "Sign In" option
+       TC#129	Press on sign in button from application navigation drawer and verify if it  takes to sign in page or not
+	   TC#130	Verify In Sign In page previously signed in auto provisioned account's email address is showing in username field or not
+	   TC#131	Verify in Sign in page Password field is empty or not -->
+      <class name="AutomationTest.GoDirectVoiceAndroid.onlineaccount.LogOutValidation"/>
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
